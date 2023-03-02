@@ -18,3 +18,5 @@
 * authenticated users can create cards and decks, but maybe limit to 2000 cards and 20 decks or something like that
 * 
 
+
+I found a [walkthrough](https://learndjango.com/tutorials/django-docker-and-postgresql-tutorial) on running django + postgresql with `docker compose`

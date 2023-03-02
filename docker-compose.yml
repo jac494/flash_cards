@@ -6,3 +6,14 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app/src
+    depends_on:
+      - db
+  db:
+    image: postgres
+    volumes:
+      - flash_card_data_dir:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+
+volumes:
+  flash_card_data_dir:    
